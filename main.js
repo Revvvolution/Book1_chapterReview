@@ -132,7 +132,7 @@ This (below) is --NOT-- an object. It doesn't represent a singular thing.
  It also has no curly braces, or key/values pairs. When using 
  an array to store these strings, they have now lost their context.
 */
-const food = ["Hamburger", "Small", "Medium rare"] // array not representing an actual thing. --Arrays-- are more like a collection of similar things.
+// const food = ["Hamburger", "Small", "Medium rare"] // array not representing an actual thing. --Arrays-- are more like a collection of similar things.
 
 
 
@@ -165,15 +165,60 @@ const whiskers = {
         color: "Brown"
     }
 
-/*
-Developers --NEVER-- describe two things with a single object.
-*/
-// ***--DON'T--*** do this:
-const theAnimals = {
-        catName: "Jingles",
-        catAge: 4,
-        catColor: "Black",
-        dogName: "Denver",
-        dogAge: 7,
-        dogColor: "Brown"
-    }
+                                /*
+                                Developers --NEVER-- describe two things with a single object.
+                                */
+                                // ***--DON'T--*** do this:
+                                const theAnimals = {
+                                        catName: "Jingles",
+                                        catAge: 4,
+                                        catColor: "Black",
+                                        dogName: "Denver",
+                                        dogAge: 7,
+                                        dogColor: "Brown"
+                                }
+
+// Access values using **--dot notation--**:
+const lassie = {
+    age: 7,
+    breed: "Collie",
+    color: "White and Brown"
+} //now to output the string "Collie" and the integer 7:
+console.log(`Lassie's breed is ${lassie.breed}`)
+console.log(`Lassie's age is ${lassie.age}`)
+
+
+// Access values using **--square bracket--** notation:
+lassie["breed"] //calling upon the key
+
+//look up a key using square
+const keyToLookup = "breed"
+// First, make JavaScript evaluate the variable and give us its value
+console.log(keyToLookup)
+
+/* Now that you know that keyToLookup evaluates to "breed", you can use 
+the variable to lookup the value with square bracket notation. */
+const lassiesBreed = lassie[keyToLookup]  // Use the value of `keyToLookup` to het the value you want
+console.log(lassiesBreed)
+
+
+//***Arrays As Values***/
+
+const kennel = {
+    name: "Nashville North Kennels",
+    address: "100 Demonbreun Road",
+    manager: "Harper Frankstone",
+    capacity: 50,
+    currentAnimals: ["Jet", "Snickers", "Blue", "Jacks", "Flap", "Barnum"] 
+    //all animals in array are assigned a single variable within the object.
+}
+//You can use dot notation to get that value:
+const boardedAnimals = kennel.currentAnimals
+
+for (let i = 0; i < boardedAnimals.length; i++) {
+    console.log(boardedAnimals[i])
+}
+// To pull a single animal from the array, use the index value following dot notation:
+console.log(kennel.currentAnimals[3])
+
+
