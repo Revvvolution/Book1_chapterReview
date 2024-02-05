@@ -61,7 +61,7 @@ const flower3 = "Daffodil"
 const flower4 = "Daisy"
 
 //These similar items can be grouped together as an ***array***:
-const flowers = [ "Tulip", "Rose", "Daffodil", "Daisy" ] //be sure to make the variable name plural for arrays' content.
+const flowers = [ "Tulip", "Rose", "Daffodil", "Daisy" ] // be sure to make the variable name plural for arrays' content.
 
 //examples with plural names:
 const dogs = [ "Schnauzer", "Labrador Retriever", "Bulldog", "Poodle", "Collie" ]
@@ -69,4 +69,17 @@ const studentAges = [ 24, 54, 32, 27, 29, 40, 35 ]
 const professions = [ "Mechanic", "Plumber", "Musician", "Engineer" ]
 const expenses = [ 71.54, 401.03, 89.59, 145.62 ]
 const months = [ "April", "July", "October", "December" ]
+
+/* Using arrays, you can learn to access specific items in an array, 
+how to add items to an array, and how to automate the process of targeting 
+each item in the array - in sequence - and doing something with each item. */
+
+myFavoriteColors = [ "red", "violet", "pink", "green", "white", "orange" ]
+/* each number(value assignment placement) in an array is called its *index*. 
+0 is red, 1 is violet, and so on until 5 for orange. Note that 0 is the first value, not 1. */
+
+//log the color white to the console by assigning a variable and calling upon its value in the array:
+
+const whiteColor = myFavoriteColors[4]
+console.log(whiteColor);
 
