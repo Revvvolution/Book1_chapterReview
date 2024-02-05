@@ -1,4 +1,4 @@
-                                        /* Fundamentals 1 - Introduction to Variables */
+                                                /* Fundamentals 1 - Introduction to Variables */
 
 console.log("Hello, world!")
 
@@ -52,7 +52,9 @@ console.log(fullName);
 
 
 
-                                        /* Fundamentals 2 - All About Arrays */
+
+
+                                                /* Fundamentals 2 - All About Arrays */
 
 //individually assigned values:
 const flower1 = "Tulip"
@@ -83,3 +85,95 @@ myFavoriteColors = [ "red", "violet", "pink", "green", "white", "orange" ]
 const whiteColor = myFavoriteColors[4]
 console.log(whiteColor);
 
+
+
+
+
+
+                                                /* Fundamentals 3 - Objects */
+
+/*
+    Basic object representing my dog Angus.
+    - The object itself is labeled with the variable of `dog`
+    - The integer of 1 is labeled with the **key*** of `age`
+
+    For example, the number 1 has no meaning in an application
+     by itself. You have no idea what that integer represents 
+     until assign it a name. On objects, those are called keys.
+*/
+const angus = {
+        age: 1
+    }
+    
+    // Another object representing my child Tessa
+    const tessa = {
+        age: 1
+    }    
+
+/*
+Until you get to more advanced JavaScript, you can 
+recognize an object because it follows this pattern.
+
+-Open and closing curly braces
+-Contains keys and values separated by a colon
+-Key/value pairs are separated by a comma
+
+This is an object. It represents a single food.
+*/
+
+const food = {
+        type: "Hamburger",
+        size: "Small",
+        temperature: "Medium rare"
+    }
+
+/*
+This (below) is --NOT-- an object. It doesn't represent a singular thing.
+ It also has no curly braces, or key/values pairs. When using 
+ an array to store these strings, they have now lost their context.
+*/
+const food = ["Hamburger", "Small", "Medium rare"] // array not representing an actual thing. --Arrays-- are more like a collection of similar things.
+
+
+
+/*
+This (below) --IS-- an object. It represents a desk and itemizes the properties of it.
+--Objects-- are ways to define details of a single thing. 
+*/ 
+
+const desk = {
+        height: 42,
+        width: 63,
+        depth: 30
+    }
+
+/*
+Here you define two separate objects:
+*/
+
+const whiskers = {
+        species: "Cat",
+        name: "Whiskers",
+        age: 4,
+        color: "Black"
+    }
+    
+    const dozer = {
+        species: "Dog",
+        name: "Dozer",
+        age: 7,
+        color: "Brown"
+    }
+
+/*
+Developers --NEVER-- describe two things with a single object.
+*/
+// ***--DON'T--*** do this:
+const theAnimals = {
+        catName: "Jingles",
+        catAge: 4,
+        catColor: "Black",
+        dogName: "Denver",
+        dogAge: 7,
+        dogColor: "Brown"
+    }
