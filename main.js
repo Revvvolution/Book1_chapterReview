@@ -231,4 +231,52 @@ console.log(kennel.currentAnimals[3])
 
                                                 /* Fundamentals 4 - Git Basics */
 
-                                               
+// Tested terminal commands successfully. Updated settings and followed prompts from lesson.
+
+
+/***************************************************************************************************************************************/
+/***************************************************************************************************************************************/
+
+
+                                                /* Fundamentals 5 - LOOPS */
+
+
+// basic while loop:
+
+let ii = 1;
+
+while(ii < 20){
+    console.log("Hello, world");
+    ii++; // <-------- i++ is the same thing as writing i = i + 1. We're reassigning it to be one more than itself.
+}
+
+// more practical example:
+
+var moviesArray = ["Casablanca", "Star Wars", "Singing in the Rain", "The Wizard of Oz", "Die Hard"];
+
+var i = 0;  // This counter variable can be named anything. Typically i for iterator.
+
+while(i < moviesArray.length){          //moviesArray.length evaluates to a number, which is 5 (5 items in the array)
+    console.log(moviesArray[i]);        //We log moviesArray[i] to the console. Right now, i is 0, so that's the same 
+    i++;   //i increments by 1.         //thing as writing moviesArray[0]. We should see "Casablanca" logged to the console.
+}
+
+            /* **--For Loop--** */
+
+// For Loops are much more common.
+for(var counter = 0; counter < moviesArray.length; counter++){
+    console.log(moviesArray[counter]);
+}  
+
+/*
+1. The first expression (var counter = 0) declares our counter variable. Our loop will start counting at 0.
+2. The second expression (counter < moviesArray.length) is the condition that must be true for the code block to run. In this case, the loop will keep going as long as i is less than moviesArray.length.
+3. The third expression (counter++) tells the counter varaible how to increment. Each time the loop runs, 'counter' will increase by 1.
+*/
+
+            // New vocabulary:  - Loop , - Iteration , - Increment
+            
+
+/***************************************************************************************************************************************/
+/***************************************************************************************************************************************/
+
